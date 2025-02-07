@@ -20,6 +20,11 @@ function subtraction(){
     let num1 = Number(input1);
     let num2 = Number(input2);
     let result = num1-num2;
+    if (result < 0){
+        document.getElementById("output").style.color = "red";
+    }else{
+        document.getElementById("output").style.color = "black";
+    }
     document.getElementById('output').innerHTML=String(result);
 }
 function multiply(){
@@ -28,6 +33,11 @@ function multiply(){
     let num1 = Number(input1);
     let num2 = Number(input2);
     let result = num1*num2;
+    if (result < 0){
+        document.getElementById("output").style.color = "red";
+    }else{
+        document.getElementById("output").style.color = "black";
+    }
     document.getElementById('output').innerHTML=String(result);
 }
 function divide(){
@@ -36,6 +46,11 @@ function divide(){
     let num1 = Number(input1);
     let num2 = Number(input2);
     let result = num1/num2;
+    if (result < 0){
+        document.getElementById("output").style.color = "red";
+    }else{
+        document.getElementById("output").style.color = "black";
+    }
     document.getElementById('output').innerHTML=String(result);
 }
 
@@ -47,6 +62,11 @@ function power(){
     let result = 1;
     for(let i=0;i<num2;i++){
         result *= num1
+    }
+    if (result < 0){
+        document.getElementById("output").style.color = "red";
+    }else{
+        document.getElementById("output").style.color = "black";
     }
     document.getElementById('output').innerHTML=String(result);
 }
